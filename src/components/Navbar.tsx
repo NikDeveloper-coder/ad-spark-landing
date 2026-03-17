@@ -13,11 +13,11 @@ const Navbar = () => {
           <a href="#features" className="hover:text-foreground transition-colors">Features</a>
           <a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a>
         </div>
-        <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer">
-          <Button className="gradient-primary font-display font-semibold text-sm">
+        <Button asChild className="gradient-primary font-display font-semibold text-sm">
+          <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer">
             Get API Key
-          </Button>
-        </a>
+          </a>
+        </Button>
       </div>
     </nav>
   );

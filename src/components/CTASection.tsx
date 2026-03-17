@@ -20,11 +20,11 @@ const CTASection = () => {
             <p className="text-muted-foreground text-lg max-w-lg mx-auto mb-8">
               Join thousands of developers building with SwiftWA. Start with our free plan today.
             </p>
-            <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="gradient-primary text-lg px-8 py-6 font-display font-semibold glow-primary">
+            <Button asChild size="lg" className="gradient-primary text-lg px-8 py-6 font-display font-semibold glow-primary">
+              <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer">
                 Start Building Now <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </a>
+              </a>
+            </Button>
           </div>
         </motion.div>
       </div>

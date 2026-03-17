@@ -120,18 +120,19 @@ const PricingSection = () => {
                 </div>
               </div>
 
-              <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer" className="mt-6 block">
-                <Button
-                  className={`w-full font-display font-semibold ${
-                    plan.highlight
-                      ? "gradient-primary glow-primary"
-                      : "bg-secondary hover:bg-secondary/80 text-foreground"
-                  }`}
-                  size="lg"
-                >
+              <Button
+                asChild
+                className={`w-full font-display font-semibold mt-6 ${
+                  plan.highlight
+                    ? "gradient-primary glow-primary"
+                    : "bg-secondary hover:bg-secondary/80 text-foreground"
+                }`}
+                size="lg"
+              >
+                <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer">
                   {plan.price === "Free" ? "Start Free" : "Subscribe"}
-                </Button>
-              </a>
+                </a>
+              </Button>
             </motion.div>
           ))}
         </div>

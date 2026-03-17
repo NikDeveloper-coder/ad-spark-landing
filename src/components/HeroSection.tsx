@@ -33,16 +33,16 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="gradient-primary text-lg px-8 py-6 font-display font-semibold glow-primary">
+            <Button asChild size="lg" className="gradient-primary text-lg px-8 py-6 font-display font-semibold glow-primary">
+              <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer">
                 Get Started Free
-              </Button>
-            </a>
-            <a href="#pricing">
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 font-display border-primary/30 text-foreground hover:bg-primary/10">
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 font-display border-primary/30 text-foreground hover:bg-primary/10">
+              <a href="#pricing">
                 View Pricing
-              </Button>
-            </a>
+              </a>
+            </Button>
           </div>
         </motion.div>
 
