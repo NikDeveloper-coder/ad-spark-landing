@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import RapidAPICTA from "@/components/RapidAPICTA";
 
 const CTASection = () => {
   return (
@@ -18,13 +18,9 @@ const CTASection = () => {
               Ready to Get Started?
             </h2>
             <p className="text-muted-foreground text-lg max-w-lg mx-auto mb-8">
-              Join thousands of developers building with SwiftWA. Start with our free plan today.
+              Join 500+ developers building with SwiftWA. Start with our free plan today.
             </p>
-            <Button asChild size="lg" className="gradient-primary text-lg px-8 py-6 font-display font-semibold glow-primary">
-              <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer">
-                Start Building Now <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
-            </Button>
+            <RapidAPICTA />
           </div>
         </motion.div>
       </div>
