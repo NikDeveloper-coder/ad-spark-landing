@@ -10,13 +10,14 @@ const Navbar = () => {
           <span className="font-display text-xl font-bold text-foreground">SwiftWA</span>
         </div>
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
+          <a href="#features" className="hover:text-foreground transition-colors">Features</a>
           <a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a>
-          <a href="#" className="hover:text-foreground transition-colors">Docs</a>
-          <a href="#" className="hover:text-foreground transition-colors">Support</a>
         </div>
-        <Button className="gradient-primary font-display font-semibold text-sm">
-          Get API Key
-        </Button>
+        <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer">
+          <Button className="gradient-primary font-display font-semibold text-sm">
+            Get API Key
+          </Button>
+        </a>
       </div>
     </nav>
   );
