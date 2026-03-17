@@ -130,7 +130,7 @@ const PricingSection = () => {
                 size="lg"
               >
                 <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer">
-                  {plan.price === "Free" ? "Start Free" : "Subscribe"}
+                  🚀 {plan.price === "Free" ? "Start Free" : "Get on RapidAPI"}
                 </a>
               </Button>
             </motion.div>

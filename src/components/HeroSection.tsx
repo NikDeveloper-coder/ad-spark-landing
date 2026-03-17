@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
 import { MessageSquare, Zap, Shield } from "lucide-react";
+import RapidAPICTA from "@/components/RapidAPICTA";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Grid background */}
       <div className="absolute inset-0 grid-bg opacity-40" />
-      
-      {/* Glow orb */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[120px]" />
 
       <div className="container relative z-10 px-6 py-20 text-center">
@@ -19,34 +17,29 @@ const HeroSection = () => {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm text-primary mb-8">
             <Zap className="w-4 h-4" />
-            Powerful WhatsApp API for Developers
+            #1 WhatsApp API on RapidAPI
           </div>
 
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight gradient-hero-text leading-tight mb-6">
-            SwiftWA
+            WhatsApp API<br />for Developers
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-4">
-            Send messages, manage groups, and automate your WhatsApp workflows with our blazing-fast API.
+            SwiftWA is a Meta-compatible WhatsApp Business API provider, available exclusively on RapidAPI. Send messages, manage groups, and automate workflows at scale.
           </p>
           <p className="text-muted-foreground max-w-xl mx-auto mb-10">
-            Trusted by developers worldwide. Start free, scale as you grow.
+            Trusted by 500+ developers. Start free, scale as you grow.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="gradient-primary text-lg px-8 py-6 font-display font-semibold glow-primary">
-              <a href="https://rapidapi.com/nizamnik21/api/swiftwa1" target="_blank" rel="noopener noreferrer">
-                Get Started Free
-              </a>
-            </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <RapidAPICTA />
+          </div>
+          <div className="mt-4">
             <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 font-display border-primary/30 text-foreground hover:bg-primary/10">
-              <a href="#pricing">
-                View Pricing
-              </a>
+              <a href="#pricing">View Pricing</a>
             </Button>
           </div>
         </motion.div>
 
-        {/* Stats row */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
